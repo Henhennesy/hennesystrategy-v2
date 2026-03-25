@@ -1,10 +1,12 @@
-title: Your Site Title
-description: Site description goes here.
-theme: jekyll-theme-cayman
-navigation:
-  - Home: /
-  - About: /about
-  - Services: /services
-  - Speaking & Media: /speaking-media
-  - Research: /research
-  - Contact: /contact
+title: Hennesy Strategy
+description: "Website description here"
+baseurl: ""
+url: ""
+theme: jekyll-cayman
+nav:
+  - Home: index.md
+  - About: about.md
+  - Services: services.md
+  - Speaking & Media: speaking-media.md
+  - Research: research.md
+  - Contact: contact.md
