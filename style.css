@@ -1,25 +1,79 @@
-.body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    /* Existing styles intact */
-    /* Other styles below */
-}
-
-/* Add the keyframes for the gradient animation */
-@keyframes gradient {
-    0% {
-        background-color: #003f87;
-    }
-    50% {
-        background-color: #FF8C00;
-    }
-    100% {
-        background-color: #003f87;
-    }
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #fff;
+    --font-family-sans-serif: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-    animation: gradient 8s ease infinite;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-sans-serif);
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
-/* The rest of the content remains unchanged */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav {
+        padding: 15px;
+    }
+    .card {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+    }
+}
