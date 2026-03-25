@@ -1,0 +1,10 @@
+title: Your Site Title
+description: Site description goes here.
+theme: jekyll-theme-cayman
+navigation:
+  - Home: /
+  - About: /about
+  - Services: /services
+  - Speaking & Media: /speaking-media
+  - Research: /research
+  - Contact: /contact
